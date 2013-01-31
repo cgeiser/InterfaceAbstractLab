@@ -1,12 +1,9 @@
 package lab1;
 
-//import javax.swing.JOptionPane;
-
 /**
- * This class redeclares the abstract method getPrerequisites 
- * from ProgrammingCourse.
- * The constructor requires courseName, courseNumber, credits
- * ... in that order.
+ * This class has no unique methods.  It inherits all final methods
+ * from ProgrammingCourse.  The constructor requires courseName, courseNumber,
+ * credits... in that order.  Prerequisites is set in the constructor.
  * NOTE: this class has NO PREREQUISITES!
  * Do not change this fact.
  *

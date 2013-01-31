@@ -1,6 +1,11 @@
 package lab1;
 
-/**
+/**I decided to make all the methods final(cannot be overridden) in the abstract
+ * class.  To me, none of the subclasses needed a substantially different
+ * property.  I also didn't think any of the methods needed any different
+ * functionality.  The only unique function of the sub-classes is that
+ * Prerequisites is set automatically in the constructor, but not by passing
+ * it to the constructor.
  *
  * @author cgeiser
  */
@@ -37,6 +42,8 @@ public class Startup {
         ProgrammingCourse class6 = new IntroToProgrammingCourse
                 ("Beginners Programming", "152-135", 0);
     }
+    
+    
     
     //method to display courseName, courseNumber, credits, prerequisites
     public static void displayClassInfo(ProgrammingCourse pc) {

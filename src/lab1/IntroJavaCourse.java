@@ -1,10 +1,9 @@
 package lab1;
 
 /**
- * This class redeclares the abstract method getPrerequisites 
- * from ProgrammingCourse.
- * The constructor requires courseName, courseNumber, credits
- * ... in that order.
+ * This class has no unique methods.  It inherits all final methods
+ * from ProgrammingCourse.  The constructor requires courseName, courseNumber,
+ * credits... in that order.  Prerequisites is set in the constructor.
  *
  * @author      Chris Geiser
  * @version     1.00

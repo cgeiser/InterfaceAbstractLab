@@ -13,7 +13,7 @@ public abstract class ProgrammingCourse {
     private String prerequisites;
 
 
-    // public final methods cannot be overridden
+    // All getters and setters are public final methods -- cannot be overridden
     
     public final String getPrerequisites() {
         return prerequisites;
