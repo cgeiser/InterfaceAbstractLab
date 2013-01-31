@@ -14,19 +14,13 @@ package lab1;
  * @version     1.00
  */
 public class IntroToProgrammingCourse extends ProgrammingCourse {
-//    private String courseName;
-//    private String courseNumber;
-    private String prerequisite = "none";
 
     public IntroToProgrammingCourse(String courseName, String courseNumber,
             double credits) {
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber);
         this.setCredits(credits);
-    }
-    
-    public String getPrerequisites() {
-        return prerequisite;
+        this.setPrerequisites("none");
     }
     
 }
