@@ -2,7 +2,8 @@ package lab1;
 
 import javax.swing.JOptionPane;
 
-/**
+/**(Just so Startup will demonstrate well, all authentication fails will
+ * display a GUI and then change the value to [none] or 0.)
  *
  * @author cgeiser
  */

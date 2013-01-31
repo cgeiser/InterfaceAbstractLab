@@ -23,24 +23,32 @@ public class Startup {
         displayClassInfo(class2);
         displayClassInfo(class3);
         
+        
+        class1.setCourseCredits(2.5);
+        displayClassInfo(class1);
+        
         // change class3's prerequisites
         class3.setPrerequisites("Intro to Programming & Intro to Java");
         displayClassInfo(class3);
         
-        // change class1's prerequisite; check prerequisite authentication
-        class1.setPrerequisites("");
+        // change class2's prerequisite; check prerequisite authentication
+        class2.setPrerequisites("");
+        displayClassInfo(class2);
 
         // try to create a class4; see if name authentication is working
         ProgrammingCourse class4 = new IntroJavaCourse
                 ("", "IT110", 4);
+        displayClassInfo(class4);
         
         // try to create a class5; see if number authentication is working
         ProgrammingCourse class5 = new AdvancedJavaCourse
                 ("Advanced Java", "", 4);
+        displayClassInfo(class5);
         
         // try to create a class6; see if credits authentication is working
         ProgrammingCourse class6 = new IntroToProgrammingCourse
                 ("Beginners Programming", "152-135", 0);
+        displayClassInfo(class6);
     }
     
     

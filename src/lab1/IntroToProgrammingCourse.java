@@ -17,7 +17,7 @@ public class IntroToProgrammingCourse extends ProgrammingCourse {
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber);
         this.setCourseCredits(courseCredits);
-        this.setPrerequisites("none");
+        this.setPrerequisites("[none]");
     }
     
 }
