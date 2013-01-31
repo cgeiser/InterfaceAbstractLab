@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 public abstract class ProgrammingCourse {
     private String courseName;
     private String courseNumber;
-    private double credits;
+    private double courseCredits;
     private String prerequisites;
 
 
@@ -22,7 +22,7 @@ public abstract class ProgrammingCourse {
         if(prerequisites == null || prerequisites.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: prerequisites cannot be null or empty string");
-            System.exit(0);
+            prerequisites = "[none]";
         }
         this.prerequisites = prerequisites;
     }
@@ -35,7 +35,7 @@ public abstract class ProgrammingCourse {
         if(courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseName cannot be null or empty string");
-            System.exit(0);
+            courseName = "[none]";
         }
         this.courseName = courseName;
     }
@@ -48,22 +48,22 @@ public abstract class ProgrammingCourse {
         if(courseNumber == null || courseNumber.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseNumber cannot be null or empty string");
-            System.exit(0);
+            courseNumber = "[none]";
         }
         this.courseNumber = courseNumber;
     }
 
-    public final double getCredits() {
-        return credits;
+    public final double getCourseCredits() {
+        return courseCredits;
     }
 
-    public final void setCredits(double credits) {
-        if(credits < 0.5 || credits > 4.0) {
+    public final void setCourseCredits(double courseCredits) {
+        if(courseCredits < 0.5 || courseCredits > 4.0) {
             JOptionPane.showMessageDialog(null,
                     "Error: credits must be in the range 0.5 to 4.0");
-            System.exit(0);
+            courseCredits = 0;
         }
-        this.credits = credits;
+        this.courseCredits = courseCredits;
     }
 
    

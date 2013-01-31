@@ -31,12 +31,12 @@ public class Startup {
         class1.setPrerequisites("");
 
         // try to create a class4; see if name authentication is working
-//        ProgrammingCourse class4 = new IntroJavaCourse
-//                ("", "IT110", 4);
+        ProgrammingCourse class4 = new IntroJavaCourse
+                ("", "IT110", 4);
         
         // try to create a class5; see if number authentication is working
-//        ProgrammingCourse class5 = new AdvancedJavaCourse
-//                ("Advanced Java", "", 4);
+        ProgrammingCourse class5 = new AdvancedJavaCourse
+                ("Advanced Java", "", 4);
         
         // try to create a class6; see if credits authentication is working
         ProgrammingCourse class6 = new IntroToProgrammingCourse
@@ -45,7 +45,7 @@ public class Startup {
     
     
     
-    //method to display courseName, courseNumber, credits, prerequisites
+    //method to display courseName, courseNumber, courseCredits, prerequisites
     public static void displayClassInfo(ProgrammingCourse pc) {
         String spacer = "    ";
         StringBuilder info = new StringBuilder();
@@ -53,7 +53,7 @@ public class Startup {
         info.append(spacer);
         info.append(pc.getCourseNumber());
         info.append(spacer);
-        info.append(pc.getCredits());
+        info.append(pc.getCourseCredits());
         info.append(spacer);
         info.append(pc.getPrerequisites());
         System.out.println(info);

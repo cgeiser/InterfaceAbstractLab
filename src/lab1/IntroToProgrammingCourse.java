@@ -3,7 +3,7 @@ package lab1;
 /**
  * This class has no unique methods.  It inherits all final methods
  * from ProgrammingCourse.  The constructor requires courseName, courseNumber,
- * credits... in that order.  Prerequisites is set in the constructor.
+ * courseCredits... in that order.  Prerequisites is set in the constructor.
  * NOTE: this class has NO PREREQUISITES!
  * Do not change this fact.
  *
@@ -13,10 +13,10 @@ package lab1;
 public class IntroToProgrammingCourse extends ProgrammingCourse {
 
     public IntroToProgrammingCourse(String courseName, String courseNumber,
-            double credits) {
+            double courseCredits) {
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber);
-        this.setCredits(credits);
+        this.setCourseCredits(courseCredits);
         this.setPrerequisites("none");
     }
     
