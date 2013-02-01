@@ -31,6 +31,10 @@ public abstract class ProgrammingCourse {
     public final String getCourseName() {
         return courseName;
     }
+    
+    public final String getCourseNameCaps() {
+        return courseName.toUpperCase();
+    }
 
     public final void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {

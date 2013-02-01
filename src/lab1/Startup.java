@@ -3,9 +3,17 @@ package lab1;
 /**I decided to make all the methods final(cannot be overridden) in the abstract
  * class.  To me, none of the subclasses needed a substantially different
  * property.  I also didn't think any of the methods needed any different
- * functionality.  The only unique function of the sub-classes is that
- * Prerequisites is set automatically in the constructor, but not by passing
- * it to the constructor.
+ * functionality.  In the code given to me, the authentication details varied
+ * by class; this solution fixes that.  Only one of the classes had a
+ * getCourseNameCaps method; by writing one abstract method in the superclass,
+ * now all the classes have access to that method.  The only unique function 
+ * of the sub-classes is that Prerequisites is set automatically in the
+ * constructor, but not by passing it to the constructor.
+ * 
+ * This particular solution saves code-writing (each method is only written
+ * once, in the abstract class), but doesn't allow for much flexibility
+ * (new sub-classes are required to use the methods exactly as they exist).
+ * 
  *
  * @author cgeiser
  */
@@ -23,9 +31,10 @@ public class Startup {
         displayClassInfo(class2);
         displayClassInfo(class3);
         
-        
+        // change class1's credits, try getCourseNameCaps
         class1.setCourseCredits(2.5);
         displayClassInfo(class1);
+        System.out.println(class1.getCourseNameCaps());
         
         // change class3's prerequisites
         class3.setPrerequisites("Intro to Programming & Intro to Java");
