@@ -3,7 +3,10 @@ package lab2;
 import javax.swing.JOptionPane;
 
 /**
- * Describe responsibilities here.
+ * Must provide methods from ProgrammingCourse.  Setters are final to preserve
+ * the authentication.
+ * 
+ * CONSTRUCTOR REQUIREMENTS: courseName, courseNumber
  *
  * @author      cgeiser
  * @version     1.00
@@ -27,7 +30,7 @@ public class IntroToProgrammingCourse implements ProgrammingCourse {
             JOptionPane.showMessageDialog(null,
                     "Error: Intro to Programming courseName"
                     + " cannot be null or empty string");
-            return;
+            courseName = "[none]";
         }
         this.courseName = courseName;
     }
@@ -41,7 +44,7 @@ public class IntroToProgrammingCourse implements ProgrammingCourse {
             JOptionPane.showMessageDialog(null,
                     "Error: Intro to Programming courseNumber"
                     + " cannot be null or empty string");
-            return;
+            courseNumber = "[none]";
         }
         this.courseNumber = courseNumber;
     }
@@ -50,12 +53,12 @@ public class IntroToProgrammingCourse implements ProgrammingCourse {
     public double getCredits() {
         return credits;
     }
-    public void setCredits(double credits) {
+    public final void setCredits(double credits) {
         if(credits < 0.5 || credits > 4.0) {
             JOptionPane.showMessageDialog(null,
                     "Error: Intro to Programming credits"
                     + " must be in the range 0.5 to 4.0");
-            return;
+            System.exit(0);
         }
         this.credits = credits;
     }
