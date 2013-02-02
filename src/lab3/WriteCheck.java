@@ -10,4 +10,8 @@ package lab3;
  */
 public interface WriteCheck {
     
+        public void writeCheck(int checkNumber, double checkAmount);
+        
+        public double getCheckAmount(int checkNumber);
+    
 }

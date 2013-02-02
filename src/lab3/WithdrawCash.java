@@ -10,4 +10,8 @@ package lab3;
  */
 public interface WithdrawCash {
     
+    public void withdrawCash(double amount);
+    
+    public double getWithdrawalAmount();
+    
 }

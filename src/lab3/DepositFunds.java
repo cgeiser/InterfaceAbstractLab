@@ -10,4 +10,8 @@ package lab3;
  */
 public interface DepositFunds {
     
+    public void depositFunds(double amount);
+    
+    public double getDepositAmount();
+    
 }
