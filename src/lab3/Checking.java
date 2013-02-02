@@ -13,6 +13,7 @@ public class Checking extends Account
     
     private double checkAmount[];
     private double depositAmount;
+    private double withdrawAmount;
     
     // constructor
     public Checking (String name, String number, double balance) {
@@ -42,5 +43,12 @@ public class Checking extends Account
     }
     
     // from Interface WithdrawCash
+    public void withdrawCash(double amount) {
+        withdrawAmount = amount;
+        this.setAccountBalance(this.getAccountBalance() - withdrawAmount);
+    }
     
+    public double getWithdrawAmount() {
+        return withdrawAmount;
+    }
 }

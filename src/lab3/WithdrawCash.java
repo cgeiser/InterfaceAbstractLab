@@ -12,6 +12,6 @@ public interface WithdrawCash {
     
     public void withdrawCash(double amount);
     
-    public double getWithdrawalAmount();
+    public double getWithdrawAmount();
     
 }

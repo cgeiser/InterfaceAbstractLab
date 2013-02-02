@@ -11,4 +11,18 @@ package lab3;
 public class CreditCard extends Account
     implements MakePayment, CalculateInterest {
     
+    private double annualInterestRate;
+    
+    // from CalculateInterest
+    public double getInterest() {
+        return 0;
+    }
+    public void setInterestRate(double interestRate) {
+        if (interestRate <= 0) {
+            System.out.println("Invalid interest entry.");
+            System.exit(0);
+        }
+        annualInterestRate = interestRate;
+    }
+    
 }
