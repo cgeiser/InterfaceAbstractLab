@@ -13,6 +13,12 @@ public class Savings extends Account
     
     private double withdrawAmount, depositAmount, interestAmount, interestRate;
     
+    // constructor
+    public Savings(String name, String num, double balance) {
+        this.setAccountName(name);
+        this.setAccountNumber(num);
+        this.setAccountBalance(balance);
+    }
     
     // from Interface WithdrawCash
     public void withdrawCash(double amount) {

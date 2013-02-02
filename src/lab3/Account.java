@@ -13,7 +13,6 @@ public abstract class Account {
     private String accountNumber;
     private double accountBalance;
 
-    
     public String getAccountName() {
         return accountName;
     }

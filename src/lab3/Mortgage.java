@@ -13,6 +13,13 @@ public class Mortgage extends Account
     
     private double interestRate, interestAmount;
     
+    // constructor
+    public Mortgage (String name, String number, double balance) {
+        this.setAccountName(name);
+        this.setAccountNumber(number);
+        this.setAccountBalance(balance);
+    }
+    
     // from CalculateInterest
     public void applyInterest() {
         interestAmount = this.getAccountBalance() * interestRate;
