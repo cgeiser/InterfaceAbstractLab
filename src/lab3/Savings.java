@@ -9,7 +9,7 @@ package lab3;
  * @author chrisgeiser
  */
 public class Savings extends Account
-    implements WithdrawCash, DepositFunds {
+    implements WithdrawCash, DepositFunds, CalculateInterest {
     
     private double withdrawAmount, depositAmount, interestAmount, interestRate;
     

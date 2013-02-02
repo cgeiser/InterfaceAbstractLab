@@ -11,7 +11,7 @@ package lab3;
 public class Checking extends Account 
     implements WriteCheck, DepositFunds, WithdrawCash {
     
-    private double checkAmount[];
+    private double[] checkAmount = new double[10];
     private double depositAmount;
     private double withdrawAmount;
     
