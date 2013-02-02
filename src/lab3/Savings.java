@@ -11,7 +11,7 @@ package lab3;
 public class Savings extends Account
     implements WithdrawCash, DepositFunds {
     
-    private double withdrawAmount, depositAmount, annualInterestRate;
+    private double withdrawAmount, depositAmount, interestAmount, interestRate;
     
     
     // from Interface WithdrawCash
@@ -35,14 +35,21 @@ public class Savings extends Account
     }
     
     // from CalculateInterest
-    public double getInterest() {
-        return 0;
+    public void applyInterest() {
+        interestAmount = this.getAccountBalance() * interestRate;
+        interestAmount *= 100;
+        double rounded = Math.round(interestAmount);
+        interestAmount = rounded / 100;
+        this.setAccountBalance(this.getAccountBalance() + interestAmount);
     }
-    public void setInterestRate(double interestRate) {
+    public void setInterestRate(double rate) {
         if (interestRate <= 0) {
             System.out.println("Invalid interest entry.");
             System.exit(0);
         }
-        annualInterestRate = interestRate;
+        interestRate = rate;
+    }
+    public double getInterestRate() {
+        return interestRate;
     }
 }

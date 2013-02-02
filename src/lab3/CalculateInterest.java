@@ -10,8 +10,10 @@ package lab3;
  */
 public interface CalculateInterest {
     
-    public double getInterest();
+    public void applyInterest();
     
     public void setInterestRate(double interestRate);
+    
+    public double getInterestRate();
     
 }

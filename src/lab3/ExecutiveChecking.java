@@ -10,7 +10,7 @@ package lab3;
  */
 public class ExecutiveChecking extends Checking implements CalculateInterest {
     
-    private double annualInterestRate; 
+    private double interestRate, interestAmount; 
     
     public ExecutiveChecking (String name, String number, double balance) {
         super(name, number, balance);
@@ -18,14 +18,21 @@ public class ExecutiveChecking extends Checking implements CalculateInterest {
     
     
     // from CalculateInterest
-    public double getInterest() {
-        return 0;
+    public void applyInterest() {
+        interestAmount = this.getAccountBalance() * interestRate;
+        interestAmount *= 100;
+        double rounded = Math.round(interestAmount);
+        interestAmount = rounded / 100;
+        this.setAccountBalance(this.getAccountBalance() + interestAmount);
     }
-    public void setInterestRate(double interestRate) {
-        if (interestRate <= 0) {
+    public void setInterestRate(double rate) {
+        if (rate <= 0) {
             System.out.println("Invalid interest entry.");
             System.exit(0);
         }
-        annualInterestRate = interestRate;
+        interestRate = rate;
+    }
+    public double getInterestRate() {
+        return interestRate;
     }
 }
