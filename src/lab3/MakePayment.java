@@ -10,5 +10,7 @@ package lab3;
  */
 public interface MakePayment {
     
+    public void makePayment(double amount);
     
+    public double getPaymentAmount();
 }

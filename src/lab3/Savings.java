@@ -49,7 +49,7 @@ public class Savings extends Account
         this.setAccountBalance(this.getAccountBalance() + interestAmount);
     }
     public void setInterestRate(double rate) {
-        if (interestRate <= 0) {
+        if (rate <= 0) {
             System.out.println("Invalid interest entry.");
             System.exit(0);
         }

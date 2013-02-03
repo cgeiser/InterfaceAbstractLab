@@ -34,7 +34,9 @@ public abstract class Account {
     }
 
     public void setAccountBalance(double accountBalance) {
-        this.accountBalance = accountBalance;
+        accountBalance *= 100;
+        double rounded = Math.round(accountBalance);
+        this.accountBalance = rounded / 100;
     }
     
     

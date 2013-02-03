@@ -12,6 +12,7 @@ public class Mortgage extends Account
     implements MakePayment, CalculateInterest{
     
     private double interestRate, interestAmount;
+    private double paymentAmount;
     
     // constructor
     public Mortgage (String name, String number, double balance) {
@@ -19,6 +20,17 @@ public class Mortgage extends Account
         this.setAccountNumber(number);
         this.setAccountBalance(balance);
     }
+    
+    // from MakePayment
+    public void makePayment(double amount) {
+        setInterestRate(0.0025);
+        applyInterest();
+        this.setAccountBalance(this.getAccountBalance() - amount);
+    }
+    public double getPaymentAmount() {
+        return paymentAmount;
+    }
+    
     
     // from CalculateInterest
     public void applyInterest() {
@@ -38,5 +50,7 @@ public class Mortgage extends Account
     public double getInterestRate() {
         return interestRate;
     }
-    
+    public double getInterestAmount() {
+        return interestAmount;
+    }
 }
