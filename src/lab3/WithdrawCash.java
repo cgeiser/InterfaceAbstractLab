@@ -1,10 +1,8 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package lab3;
 
-/**
+/**WithdrawCash, MakePayment, WriteCheck are all very similar methods.
+ * Having just read the DIP article, I could have had a "withdraw" superclass
+ * and made different cash, payment, check subclasses.
  *
  * @author chrisgeiser
  */

@@ -1,6 +1,8 @@
 package lab3;
 
-/**
+/**Demonstration instantiates one example of each concrete class and 
+ * performs several actions on each, displaying the accountName,
+ * accountNumber, and accountBalance after each.
  *
  * @author chrisgeiser
  */
@@ -25,6 +27,7 @@ public class DemonstrateBANK {
         displayInfo(myAccount);
         
         
+        
         Savings savAcct = new Savings("Sally Savings", "TR0112645", 10450.92);
         displayInfo(savAcct);
         
@@ -37,6 +40,7 @@ public class DemonstrateBANK {
         savAcct.setInterestRate(0.024);
         savAcct.applyInterest();
         displayInfo(savAcct);
+        
         
         
         CreditCard myCard = new CreditCard("Visa", "4919000247773242", 420.31);

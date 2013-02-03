@@ -1,10 +1,8 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package lab3;
 
-/**
+/**Checking extends Account and implements 3 of the 5 interfaces.  I made the 
+ * bank "functions" interfaces so that each type of account can have only 
+ * the methods it needs.  
  *
  * @author chrisgeiser
  */

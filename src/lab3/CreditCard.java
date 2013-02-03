@@ -1,10 +1,7 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package lab3;
 
-/**
+/**Similar idea to the other concrete classes...only implementing methods
+ * that it needs.
  *
  * @author chrisgeiser
  */

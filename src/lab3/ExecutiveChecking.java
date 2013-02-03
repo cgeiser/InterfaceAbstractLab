@@ -1,10 +1,8 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package lab3;
 
-/**
+/**ExecutiveChecking is an interest-bearing subclass of Checking.  It extends
+ * Checking and implements CalculateInterest to add interest functionality
+ * to a checking acct.
  *
  * @author chrisgeiser
  */

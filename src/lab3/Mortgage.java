@@ -1,10 +1,7 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package lab3;
 
-/**
+/**Another concrete instantiatable class.  In this simple example, implementing
+ * methods from only 2 interfaces.
  *
  * @author chrisgeiser
  */

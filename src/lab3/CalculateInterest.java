@@ -1,10 +1,7 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package lab3;
 
-/**
+/**Works well as an interface because the inheriting classes can have their
+ * own different methods for calculating interest if needed.
  *
  * @author chrisgeiser
  */

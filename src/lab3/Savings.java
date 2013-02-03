@@ -1,10 +1,10 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package lab3;
 
-/**
+/**Savings also extends Account, but uses a different 3 interfaces.  I thought
+ * the interface worked great for this.  You can implement which "functions"
+ * each account type has, but also change the methods to suit the account 
+ * type.  i.e. interest might need to be calculated differently for a savings
+ * account and a credit card account.
  *
  * @author chrisgeiser
  */
